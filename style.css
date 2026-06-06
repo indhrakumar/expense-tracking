@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #000000 0%, #011a1d 100%);
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: teal;
+  border-radius: 999px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+header h2 {
+  font-size: 3.4rem;
+  color: aqua;
+  font-weight: lighter;
+  text-shadow:
+    0 0 5px,
+    0 0 10px black,
+    0 0 40px aqua;
+  margin-bottom: 10px;
+}
+header p {
+  font-style: italic;
+  font-size: 1.8rem;
+  color: aquamarine;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: calc(100vh - 150px);
+  align-items: center;
+  justify-content: center;
+}
+.input-field {
+  display: flex;
+  position: relative;
+  width: 500px;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #0000002f;
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 128, 128, 0.47);
+}
+.inputs,
+#btn {
+  padding: 5px 10px;
+  border-radius: 9px;
+  height: 40px;
+  outline: none;
+  border: 1px solid gray;
+}
+.inputs:focus {
+  box-shadow: 0 0 10px rgba(0, 128, 128, 0.841);
+}
+#btn {
+  font-weight: 800;
+  color: #000000;
+  background: teal;
+  border: none;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+#btn:hover {
+  box-shadow: 0 0 30px teal;
+  color: azure;
+}
+#total {
+  width: 100%;
+  text-align: center;
+  color: rgb(57, 246, 129);
+  letter-spacing: 4px;
+  font-weight: 800;
+  margin-top: 60px;
+}
+.info {
+  position: absolute;
+  display: none;
+  margin: auto auto;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+  font-weight: 800;
+  letter-spacing: 4px;
+  font-style: italic;
+}
+.card {
+  background-color: rgba(53, 53, 140, 0.168);
+  backdrop-filter: blur(3px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: aqua;
+  padding: 15px;
+  border-radius: 25px;
+  min-height: 120px;
+  gap: 30px;
+  position: relative;
+}
+.card h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: gold;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.card span {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: red;
+  font-size: 25px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: yellowgreen;
+  letter-spacing: 3px;
+}
+#expense-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 30px 20px;
+}
+.displayhere {
+  width: 100%;
+  height: 100vh;
+}
